@@ -1,0 +1,6 @@
+README.md
+setup.py
+PyPani.egg-info/PKG-INFO
+PyPani.egg-info/SOURCES.txt
+PyPani.egg-info/dependency_links.txt
+PyPani.egg-info/top_level.txt

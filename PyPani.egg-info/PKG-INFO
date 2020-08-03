@@ -1,4 +1,11 @@
-MIT License
+Metadata-Version: 1.0
+Name: PyPani
+Version: 1.0.1
+Summary: A tool for calculating water balance ratio for crop.
+Home-page: UNKNOWN
+Author: M. Alfi Hasan
+Author-email: mdalfihasan19@gmail.com
+License: MIT License
 
 Copyright (c) 2020, M Alfi Hasan, CIMMYT Bangladesh
 
@@ -20,3 +27,24 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Description: # PyPani
+        A Python package for the Irrigation scheduler, PANI.
+        
+        ---------------
+        
+        ![PyPani Diagram](images/logo.png)
+        
+        --------------
+        
+        ## Example Run:
+        To run manually:
+        ``` python model.py 03/10/2018 322/2017```
+        
+        To build and test the package.
+        
+        ```pip3 install -e . ```
+        
+        Example data can be found in "tests" folder
+        
+Platform: UNKNOWN

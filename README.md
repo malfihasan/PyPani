@@ -3,7 +3,7 @@ A Python package for the Irrigation scheduler, PANI.
 
 ---------------
 
-![PyPani Diagram](images/logo.png)
+![PyPani Flow Diagram](Flowchart.jpg)
 
 --------------
 

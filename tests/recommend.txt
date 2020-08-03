@@ -1,0 +1,7 @@
+Percent of Field Capacity  = 27.1343481138319  (41.0 mm)
+Warning! Percent Below Stress Level = -4.093788408811571  (-4.329999999999998 mm)
+
+********* IRRIGATION ALERT *********
+The field needs to be irrigated in next 7 days !
+Irrig. Recom. (mm): 59.78657669263741 to 123.96414417315935
+To fill soil profile (mm): 123.96414417315935
