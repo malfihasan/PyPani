@@ -3,6 +3,11 @@ A Python package for the Irrigation scheduler, PANI.
 
 ---------------
 
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
+
+--------------
+
 ## Example Run:
 To run manually:
 ``` python model.py 03/10/2018 322/2017```
