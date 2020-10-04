@@ -25,6 +25,7 @@ To install:
 Example Run
 ---------
 To run manually:
+
 ``` python model.py 03/10/2018 322/2017```
 
 To build and test the package.
@@ -35,16 +36,23 @@ Example data can be found in "tests" folder
 
 Contact
 ---------
-Dr. M. Alfi Hasan - mdalfihasan19@gmail.com - http://www.malfihasan.com/
-Dr. Urs Christoph SCHULTHESS - U.Schulthess@cgiar.org 
+Dr. M. Alfi Hasan - mdalfihasan19@gmail.com - http://www.malfihasan.com/  
+
+Dr. Urs Christoph SCHULTHESS - U.Schulthess@cgiar.org  
+
 Distributed under the MIT license. See LICENSE.txt for more information.
 
 
 References
 ---------
 [1] Collabortive partner:
+
 -- The International Maize and Wheat Improvement Center (CIMMYT) in Bangladesh and Mexico
+
 -- The Commonwealth Scientific and Industrial Research Organisation (CSIRO) in Australia
+
 -- The International Crops Research Institute for the Semi-Arid Tropics (ICRISAT) in Mali and Nigeria
+
 -- The University of Maryland, USA, in Tanzania and Uganda
+
 -- M. Alfi Hasan - Independent consultant - Affiliated with the University of Rhode Island. 
