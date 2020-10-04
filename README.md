@@ -2,11 +2,10 @@
 "PyPani" is a python package, provides irrigation scheduling based weather, soil, vegetation stage, and crop types. It can be incorporated with a real-time forcasting model with sufficient environmental information and can simplistically recommend irrigation requirements to the farmers and small agriculture stakeholders.  The module concept was originally proposed by an international group of research institutes [1] in a project named "[The STARS Project](https://www.stars-project.org/en/about-us/the-stars-project/)". Later, the International Wheat and Maize Organization Bangladesh, extend the idea, and thus the model is developed as for python users.
 
 The core functionality of the model can be elaborated in the following diagram. There are four sub-modules that connect the core model: 
-Weather module: It takes the observed and forecasted weather data for the model. The module supports daily weather data with a seven-day weather forecast. For the most basic evapotranspiration calculation approach,  it requires daily maximum and minimum temperature(C), and rainfall (mm).  Currently, it supports per year based prediction with a planting date for a single growing season for a single crop in a single simulation.  In addition to that, temperature values should not have missing values in the input. 
-Management module: It defines the soli type, moisture level input, and prior irrigation. Also, various depths of the aquifer can be characterized through 'config' to support the modeling operation.
-
-Calculation module [ GDU and PET module ]: The module calculates the aggregated growing degree day (GDU )values from planting and determines the evapotranspiration based on selected evapotranspiration equation. Currently, it supports three equations: Penman–Monteith Equation,  Priestley–Taylor, Blainy-Criddle Equation.
-Recommendation module: It generates daily crop water use and provides a next week's recommendation based on forecast data. 
++ Weather module: It takes the observed and forecasted weather data for the model. The module supports daily weather data with a seven-day weather forecast. For the most basic evapotranspiration calculation approach,  it requires daily maximum and minimum temperature(C), and rainfall (mm).  Currently, it supports per year based prediction with a planting date for a single growing season for a single crop in a single simulation.  In addition to that, temperature values should not have missing values in the input. 
++ Management module: It defines the soli type, moisture level input, and prior irrigation. Also, various depths of the aquifer can be characterized through 'config' to support the modeling operation.
++ Calculation module [ GDU and PET module ]: The module calculates the aggregated growing degree day (GDU )values from planting and determines the evapotranspiration based on selected evapotranspiration equation. Currently, it supports three equations: Penman–Monteith Equation,  Priestley–Taylor, Blainy-Criddle Equation.
++ Recommendation module: It generates daily crop water use and provides a next week's recommendation based on forecast data. 
 
 ![PyPani Flow Diagram](Flowchart.jpg)
 
