@@ -1,57 +1,66 @@
-# PyPani
-"PyPani" is a python package, provides irrigation scheduling based weather, soil, vegetation stage, and crop types. It can be incorporated with a real-time forcasting model with sufficient environmental information and can simplistically recommend irrigation requirements to the farmers and small agriculture stakeholders.  The module concept was originally proposed by an international group of research institutes [1] in a project named "[The STARS Project](https://www.stars-project.org/en/about-us/the-stars-project/)". Later, the International Wheat and Maize Organization Bangladesh, extend the idea, and thus the model is developed as for python users.
+# 🌿 PyPani 🌿
 
-The core functionality of the model can be elaborated in the following diagram. There are four sub-modules that connect the core model: 
-+ Weather module: It takes the observed and forecasted weather data for the model. The module supports daily weather data with a seven-day weather forecast. For the most basic evapotranspiration calculation approach,  it requires daily maximum and minimum temperature(C), and rainfall (mm).  Currently, it supports per year based prediction with a planting date for a single growing season for a single crop in a single simulation.  In addition to that, temperature values should not have missing values in the input. 
-+ Management module: It defines the soli type, moisture level input, and prior irrigation. Also, various depths of the aquifer can be characterized through 'config' to support the modeling operation.
-+ Calculation module [ GDU and PET module ]: The module calculates the aggregated growing degree day (GDU )values from planting and determines the evapotranspiration based on selected evapotranspiration equation. Currently, it supports three equations: Penman–Monteith Equation,  Priestley–Taylor, Blainy-Criddle Equation.
-+ Recommendation module: It generates daily crop water use and provides a next week's recommendation based on forecast data. 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python: 3.5+](https://img.shields.io/badge/Python-3.5+-blue.svg)](https://www.python.org/downloads/)
+[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)](https://github.com/malfihasan/PyPani/issues)
+
+## Overview
+
+"PyPani" is a Python package that provides irrigation scheduling based on weather, soil, vegetation stage, and crop types. It can be incorporated with a real-time forecasting model with sufficient environmental information and can simplistically recommend irrigation requirements to farmers and small agriculture stakeholders. The module concept was originally proposed by an international group of research institutes [1] in a project named "[The STARS Project](https://www.stars-project.org/en/about-us/the-stars-project/)". Later, the International Wheat and Maize Improvement Center (CIMMYT) Bangladesh extended the idea, leading to the development of this model for Python users.
+
+## Features
+
+- 🌤️ **Weather Module**: Integrates observed and forecasted weather data. Supports daily weather data with a seven-day weather forecast. Requires daily maximum and minimum temperature (°C) and rainfall (mm). Currently, it supports per year-based prediction with a planting date for a single growing season for a single crop.
+- 🌱 **Management Module**: Defines soil type, moisture level input, and prior irrigation. Supports various depths of the aquifer through 'config' to facilitate the modeling operation.
+- 📈 **Calculation Module [GDU and PET Module]**: Calculates the aggregated growing degree day (GDU) values from planting and determines evapotranspiration based on the selected equation. Supports Penman–Monteith Equation, Priestley–Taylor, and Blainy-Criddle Equation.
+- 💧 **Recommendation Module**: Generates daily crop water use and provides next week's irrigation recommendations based on forecast data.
 
 ![PyPani Flow Diagram](Flowchart.jpg)
 
-Installation Guide
----------
-The package can be install as regular python package. 
-The python version of the package: 3.8.2
+## Installation Guide
 
-To check python version:
-```pip --version```
+The package can be installed as a regular Python package. The supported Python version is 3.8.2.
 
-To install: 
-```pip install git+https://github.com/malfihasan/PyPani.git#egg=PyPani```
+### Check Python Version:
+```bash
+pip --version
+```
 
+### Install the Package:
+```bash
+pip install git+https://github.com/malfihasan/PyPani.git#egg=PyPani
+```
 
-Example Run
----------
-To run manually:
+## Usage
 
-``` python model.py 03/10/2018 322/2017```
+### Example Run
 
-To build and test the package.
+To run the model manually:
+```bash
+python model.py 03/10/2018 322/2017
+```
 
-```pip3 install -e . ```
+To build and test the package:
+```bash
+pip3 install -e .
+```
 
-Example data can be found in "tests" folder
+Example data can be found in the "tests" folder.
 
-Contact
----------
-Dr. M. Alfi Hasan - mdalfihasan19@gmail.com - http://www.malfihasan.com/  
+## Contact
 
-Dr. Urs Christoph SCHULTHESS - U.Schulthess@cgiar.org  
+For further information or questions, please contact:
+
+- Dr. M. Alfi Hasan - [mdalfihasan19@gmail.com](mailto:mdalfihasan19@gmail.com) - [malfihasan.com](http://www.malfihasan.com/)
+- Dr. Urs Christoph Schulthess - [U.Schulthess@cgiar.org](mailto:U.Schulthess@cgiar.org)
 
 Distributed under the MIT license. See LICENSE.txt for more information.
 
+## References
 
-References
----------
-[1] Collabortive partner:
-
--- The International Maize and Wheat Improvement Center (CIMMYT) in Bangladesh and Mexico
-
--- The Commonwealth Scientific and Industrial Research Organisation (CSIRO) in Australia
-
--- The International Crops Research Institute for the Semi-Arid Tropics (ICRISAT) in Mali and Nigeria
-
--- The University of Maryland, USA, in Tanzania and Uganda
-
--- M. Alfi Hasan - Independent consultant - Affiliated with the University of Rhode Island. 
+[1] Collaborative partners:
+- The International Maize and Wheat Improvement Center (CIMMYT) in Bangladesh and Mexico
+- The Commonwealth Scientific and Industrial Research Organisation (CSIRO) in Australia
+- The International Crops Research Institute for the Semi-Arid Tropics (ICRISAT) in Mali and Nigeria
+- The University of Maryland, USA, in Tanzania and Uganda
+- M. Alfi Hasan - Independent consultant - Affiliated with the University of Rhode Island.
